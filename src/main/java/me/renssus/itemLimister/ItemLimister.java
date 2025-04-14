@@ -8,8 +8,12 @@ public final class ItemLimister extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        new configymlmaker(this);
+
+//        new configymlmaker(this);
         getServer().getPluginManager().registerEvents(new InventoryLimiter(this), this);
+
+//        getCommand("itemlimiter").setExecutor(new ConfigReloader(new InventoryLimiter(this)));
+
     }
 
     @Override
